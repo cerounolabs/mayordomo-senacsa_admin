@@ -24,6 +24,22 @@
 	
 	$seg_04         = $_SESSION['seg_04'];
 
+	if (!isset($val01)){
+		$val01 = 1;
+	}
+
+	if (!isset($val02)){
+		$val02 = $work01_1;
+	}
+
+	if (!isset($val03)){
+		$val03 = $work01_2;
+	}
+
+	if (!isset($val04)){
+		$val04 = $work03;
+	}
+
     if (isset($val01) && isset($val02) && isset($val03) && isset($val04)) {
         $dataJSON = json_encode(
             array(

@@ -7,10 +7,10 @@
     
     require '../../class/function/curl_api.php';
 
-    $val01          = $_POST['dominioEstado'];
-    $val02          = strtoupper($_POST['dominioNombre']);
-    $val03          = strtoupper($_POST['dominioValor']);
-    $val04          = strtoupper($_POST['dominioObservacion']);
+    $val01          = $_POST['var01'];
+    $val02          = strtoupper($_POST['var02']);
+    $val03          = strtoupper($_POST['var03']);
+    $val04          = strtoupper($_POST['var04']);
 
     $work01         = $_POST['workCodigo'];
     $work02         = $_POST['workModo'];

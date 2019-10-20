@@ -155,8 +155,8 @@
                                         <input id="workDominio" name="workDominio" class="form-control" type="hidden" placeholder="Dominio" value="<?php echo $workDominio; ?>" required readonly>
                                     </div>
                                     <div class="form-group">
-                                        <label for="dominioEstado">Estado</label>
-                                		<select id="dominioEstado" name="dominioEstado" class="select2 form-control custom-select" style="width: 100%; height:36px;" <?php echo $workReadonly; ?>>
+                                        <label for="var01">ESTADO</label>
+                                		<select id="var01" name="var01" class="select2 form-control custom-select" style="width: 100%; height:40px;" <?php echo $workReadonly; ?>>
                                     		<optgroup label="Estado">
                                         		<option value="1" <?php echo $row_01_h; ?>>HABILITADO</option>
                                         		<option value="2" <?php echo $row_01_d; ?>>DESHABILITADO</option>
@@ -164,16 +164,16 @@
                                 		</select>
                                     </div>
                                     <div class="form-group">
-                                        <label for="dominioNombre">Nombre</label>
-                                        <input id="dominioNombre" name="dominioNombre" class="form-control" type="text" style="text-transform:uppercase;" placeholder="Nombre" value="<?php echo $row_03; ?>" required <?php echo $workReadonly; ?>>
+                                        <label for="var02">NOMBRE</label>
+                                        <input id="var02" name="var02" class="form-control" type="text" style="text-transform:uppercase; height:40px;" placeholder="Nombre" value="<?php echo $row_03; ?>" required <?php echo $workReadonly; ?>>
                                     </div>
                                     <div class="form-group">
-                                        <label for="dominioValor">Dominio</label>
-                                        <input id="dominioValor" name="dominioValor" class="form-control" type="text" style="text-transform:uppercase;" placeholder="Dominio" value="<?php echo $workDominio; ?>" required readonly>
+                                        <label for="var03">DOMINIO</label>
+                                        <input id="var03" name="var03" class="form-control" type="text" style="text-transform:uppercase; height:40px;" placeholder="Dominio" value="<?php echo $workDominio; ?>" required readonly>
                                     </div>
                                     <div class="form-group">
-                                    	<label for="dominioObservacion">Observaci&oacute;n</label>
-                                    	<textarea id="dominioObservacion" name="dominioObservacion" class="form-control" rows="5" <?php echo $workReadonly; ?>><?php echo $row_05; ?></textarea>
+                                    	<label for="var04">OBSERVACI&oacute;N</label>
+                                    	<textarea id="var04" name="var04" class="form-control" style="text-transform:uppercase;" rows="5" <?php echo $workReadonly; ?>><?php echo $row_05; ?></textarea>
                                 	</div>
                                     <button type="submit" class="btn <?php echo $workAStyle; ?>"><?php echo $workATitulo; ?></button>
                                     <a role="button" class="btn btn-dark" href="../public/dominio.php?dominio=<?php echo $workDominio; ?>">Volver</a>
