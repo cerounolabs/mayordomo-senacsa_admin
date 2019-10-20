@@ -64,22 +64,26 @@
     
 	switch($workModo){
 		case 'C':
-			$workReadonly	= '';
+            $workReadonly	= '';
+            $workReadonly1	= '';
 			$workATitulo	= 'Agregar';
 			$workAStyle		= 'btn-info';
 			break;
 		case 'R':
-			$workReadonly	= 'disabled';
+            $workReadonly	= 'disabled';
+            $workReadonly1	= 'disabled';
 			$workATitulo	= 'Ver';
 			$workAStyle		= 'btn-primary';
 			break;
 		case 'U':
-			$workReadonly	= '';
+            $workReadonly	= '';
+            $workReadonly1	= 'disabled';
 			$workATitulo	= 'Actualizar';
 			$workAStyle		= 'btn-success';
 			break;
 		case 'D':
-			$workReadonly	= 'disabled';
+            $workReadonly	= 'disabled';
+            $workReadonly1	= 'disabled';
 			$workATitulo	= 'Eliminar';
 			$workAStyle		= 'btn-danger';
 			break;
@@ -167,7 +171,7 @@
                                         <input id="workDominio" name="workDominio" class="form-control" type="hidden" placeholder="Dominio" value="<?php echo $workDominio; ?>" required readonly>
                                     </div>
                                     <div class="form-group">
-                                        <label for="var01">Estado</label>
+                                        <label for="var01">ESTADO</label>
                                 		<select id="var01" name="var01" class="select2 form-control custom-select" style="width: 100%; height:40px;" <?php echo $workReadonly; ?>>
                                     		<optgroup label="Estado">
                                         		<option value="1" <?php echo $row_01_h; ?>>HABILITADO</option>
@@ -177,7 +181,7 @@
                                     </div>
                                     <div class="form-group">
                                         <label for="var02"><?php echo $titleDominio1; ?></label>
-                                        <select id="var02" name="var02" class="select2 form-control custom-select" style="width: 100%; height:40px;" <?php echo $workReadonly; ?>>
+                                        <select id="var02" name="var02" class="select2 form-control custom-select" style="width: 100%; height:40px;" <?php echo $workReadonly1; ?>>
                                             <optgroup label="<?php echo $titleDominio1; ?>">
 <?php
     if ($dominioJSON['code'] === 200){
@@ -200,7 +204,7 @@
                                     </div>
                                     <div class="form-group">
                                         <label for="var03"><?php echo $titleDominio2; ?></label>
-                                        <select id="var03" name="var03" class="select2 form-control custom-select" style="width: 100%; height:40px;" <?php echo $workReadonly; ?>>
+                                        <select id="var03" name="var03" class="select2 form-control custom-select" style="width: 100%; height:40px;" <?php echo $workReadonly1; ?>>
                                             <optgroup label="<?php echo $titleDominio2; ?>">
 <?php
     if ($dominioJSON['code'] === 200){
@@ -222,12 +226,12 @@
                                         </select>
                                     </div>
                                     <div class="form-group">
-                                        <label for="var04">Dominio</label>
+                                        <label for="var04">DOMINIO</label>
                                         <input id="var04" name="var04" class="form-control" type="text" style="text-transform:uppercase; height:40px;" placeholder="Dominio" value="<?php echo $workDominio; ?>" required readonly>
                                     </div>
                                     <div class="form-group">
-                                    	<label for="var05">Observaci&oacute;n</label>
-                                    	<textarea id="var05" name="var05" class="form-control" rows="5" <?php echo $workReadonly; ?>><?php echo $row_05; ?></textarea>
+                                    	<label for="var05">OBSERVACI&oacute;N</label>
+                                    	<textarea id="var05" name="var05" class="form-control" style="text-transform:uppercase;" rows="5" <?php echo $workReadonly; ?>><?php echo $row_05; ?></textarea>
                                 	</div>
                                     <button type="submit" class="btn <?php echo $workAStyle; ?>"><?php echo $workATitulo; ?></button>
                                     <a role="button" class="btn btn-dark" href="../public/dominiosub.php?dominio=<?php echo $workDominio; ?>">Volver</a>
