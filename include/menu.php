@@ -1,7 +1,7 @@
         <!-- ============================================================== -->
         <!-- Topbar header - style you can find in pages.scss -->
         <!-- ============================================================== -->
-        <header class="topbar">
+        <header class="topbar header-nav">
             <nav class="navbar top-navbar navbar-expand-md navbar-dark">
                 <div class="navbar-header">
                     <!-- This is for the sidebar toggle which is visible on mobile only -->
@@ -143,7 +143,7 @@
                             <ul aria-expanded="false" class="collapse first-level">
                                 <li class="sidebar-item">
                                		<a href="../public/establecimiento.php" class="sidebar-link">
-                               			<i class="mdi mdi-establecimiento-establecimiento"></i>
+                               			<i class="mdi mdi-establecimiento"></i>
                                			<span class="hide-menu"> Establecimiento </span>
                                		</a>
                                	</li>
@@ -158,7 +158,7 @@
                             <ul aria-expanded="false" class="collapse first-level">
                             	<li class="sidebar-item">
                                		<a href="javascript:void(0)" class="sidebar-link">
-                               			<i class="mdi mdi-ot-ot"></i>
+                               			<i class="mdi mdi-ot"></i>
                                			<span class="hide-menu"> Orden Trabajo </span>
                                		</a>
                                	</li>
@@ -173,7 +173,7 @@
                             <ul aria-expanded="false" class="collapse first-level">
                             	<li class="sidebar-item">
                                		<a href="../public/persona.php" class="sidebar-link">
-                               			<i class="mdi mdi-persona-persona"></i>
+                               			<i class="mdi mdi-persona"></i>
                                			<span class="hide-menu"> Persona </span>
                                		</a>
                                	</li>
@@ -309,16 +309,34 @@
 												<span class="hide-menu"> Tipo Raza </span>
 											</a>
 										</li>
+										<li class="sidebar-item">
+											<a href="../public/dominiosub.php?dominio=ANIMALESPECIERAZA" class="sidebar-link">
+												<i class="mdi mdi-parametro-animal"></i>
+												<span class="hide-menu"> Especie / Raza </span>
+											</a>
+										</li>
                                         <li class="sidebar-item">
-											<a href="javascript:void(0)" class="sidebar-link">
+											<a href="../public/dominio.php?dominio=ANIMALCATEGORIA" class="sidebar-link">
 												<i class="mdi mdi-parametro-animal"></i>
 												<span class="hide-menu"> Tipo Categoria </span>
 											</a>
 										</li>
+										<li class="sidebar-item">
+											<a href="../public/dominiosub.php?dominio=ANIMALESPECIECATEGORIA" class="sidebar-link">
+												<i class="mdi mdi-parametro-animal"></i>
+												<span class="hide-menu"> Especie / Categoria </span>
+											</a>
+										</li>
                                         <li class="sidebar-item">
-											<a href="javascript:void(0)" class="sidebar-link">
+											<a href="../public/dominio.php?dominio=ANIMALSUBCATEGORIA" class="sidebar-link">
 												<i class="mdi mdi-parametro-animal"></i>
 												<span class="hide-menu"> Tipo SubCategoria </span>
+											</a>
+										</li>
+										<li class="sidebar-item">
+											<a href="../public/dominiosub.php?dominio=ANIMALCATEGORIASUBCATEGORIA" class="sidebar-link">
+												<i class="mdi mdi-parametro-animal"></i>
+												<span class="hide-menu"> Categoria / SubCategoria </span>
 											</a>
 										</li>
 									</ul>

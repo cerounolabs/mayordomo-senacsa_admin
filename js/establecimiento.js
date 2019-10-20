@@ -42,7 +42,7 @@ $(document).ready(function() {
 			{ targets			: [4],	visible : true,	searchable : true,	orderData : [4, 0] },
 			{ targets			: [5],	visible : true,	searchable : true,	orderData : [5, 0] },
 			{ targets			: [6],	visible : true,	searchable : true,	orderData : [6, 0] },
-			{ targets			: [7],	visible : true,	searchable : true,	orderData : [7, 0] },
+			{ targets			: [7],	visible : false,searchable : false,	orderData : [7, 0] },
 			{ targets			: [8],	visible : false,searchable : false,	orderData : [8, 0] },
 			{ targets			: [9],	visible : false,searchable : false,	orderData : [9, 0] },
 			{ targets			: [10],	visible : false,searchable : false,	orderData : [10, 0] },
