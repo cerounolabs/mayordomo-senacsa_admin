@@ -121,4 +121,40 @@
 
         return $result;
     }
+
+    function getTitleSubDominio($var01){
+        $titulo     = '';
+        $titulo1    = '';
+        $titulo2    = '';
+        $dominio1   = '';
+        $dominio2   = '';
+
+        switch ($var01) {
+            case 'ANIMALESPECIERAZA':
+                $titulo     = 'ANIMAL ESPECIE / RAZA';
+                $titulo1    = 'ESPECIE';
+                $titulo2    = 'RAZA';
+                $dominio1   = 'ANIMALESPECIE';
+                $dominio2   = 'ANIMALRAZA';
+                break;
+
+            case 'ANIMALESPECIECATEGORIA':
+                $titulo     = 'ANIMAL ESPECIE / CATEGORÍA';
+                $titulo1    = 'ESPECIE';
+                $titulo2    = 'CATEGORÍA';
+                $dominio1   = 'ANIMALESPECIE';
+                $dominio2   = 'ANIMALCATEGORIA';
+                break;
+
+            case 'ANIMALCATEGORIASUBCATEGORIA':
+                $titulo     = 'ANIMAL CATEGORÍA / SUBCATEGORÍA';
+                $titulo1    = 'CATEGORÍA';
+                $titulo2    = 'SUBCATEGORÍA';
+                $dominio1   = 'ANIMALCATEGORIA';
+                $dominio2   = 'ANIMALSUBCATEGORIA';
+                break;
+        }
+
+        return array($titulo, $titulo1, $titulo2, $dominio1, $dominio2);
+    }
 ?>
